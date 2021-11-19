@@ -2,7 +2,7 @@
 version: 2
 
 models:
-    - name: terra_metrics
+    - name: terra_daily_metrics
       description: "A collection of daily terra metrics"
       columns:
           - name: metric_date
