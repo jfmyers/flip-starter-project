@@ -2,20 +2,16 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: terra_metrics
+      description: "A collection of daily terra metrics"
       columns:
-          - name: id
-            description: "The primary key for this table"
+          - name: metric_date
+            description: "The date the metric is recorded"
             tests:
-                - unique
                 - not_null
-
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
+          - name: metric_type
+            description: "The type of metric."
             tests:
-                - unique
                 - not_null
+          - name: metric_value
+            description: "The metric value."
