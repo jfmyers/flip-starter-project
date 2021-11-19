@@ -3,6 +3,7 @@ version: 2
 sources:
   - name: terra
     schema: terra
+    database: FLIPSIDE
     tables:
       - name: airdrop_claims
       - name: daily_balances
@@ -19,6 +20,7 @@ sources:
       - name: validator_voting_power
   - name: terra_sv
     schema: terra_sv
+    database: FLIPSIDE
     tables:
       - name: blocks
       - name: labels
@@ -28,6 +30,7 @@ sources:
       - name: msg_events
   - name: ethereum
     schema: ethereum
+    database: FLIPSIDE
     tables:
       - name: dex_liquidity_pools
       - name: dex_swaps
@@ -40,6 +43,7 @@ sources:
       - name: udm_events
   - name: uniswapv3
     schema: uniswapv3
+    database: FLIPSIDE
     tables:
       - name: lp_actions
       - name: pools
